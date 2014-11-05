@@ -1,0 +1,2 @@
+RabbitMQ performance tests
+==========================

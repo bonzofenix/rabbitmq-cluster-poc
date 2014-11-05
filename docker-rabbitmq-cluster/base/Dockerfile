@@ -11,6 +11,6 @@ RUN rpm --import http://www.rabbitmq.com/rabbitmq-signing-key-public.asc
 
 RUN yum install -y  http://www.rabbitmq.com/releases/rabbitmq-server/v3.4.0/rabbitmq-server-3.4.0-1.noarch.rpm
 
-RUN /usr/sbin/rabbitmq-plugins enable rabbitmq_management  rabbitmq_management_agent rabbitmq_management_visualiser sockjs rabbitmq_shovel
+RUN /usr/sbin/rabbitmq-plugins enable rabbitmq_management  rabbitmq_management_agent rabbitmq_management_visualiser sockjs rabbitmq_shovel rabbitmq_shovel_management
 
-#CMD /usr/sbin/rabbitmq-server
+CMD /usr/sbin/rabbitmq-server
